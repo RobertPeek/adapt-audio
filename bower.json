@@ -1,0 +1,17 @@
+{
+  "name": "adapt-audio",
+  "version": "1.0.0",
+  "framework": ">=5.19.1",
+  "homepage": "https://github.com/RobertPeek/adapt-audio",
+  "issues": "https://github.com/RobertPeek/adapt-audio/issues",
+  "displayName" : "Audio",
+  "extension" : "audio",
+  "description": "An extension to add audio to a course via Articles, Blocks and Components.",
+  "main": "/js/adapt-audio.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-extension"
+  ],
+  "license": "GPL-3.0",
+  "targetAttribute": "_audio"
+}

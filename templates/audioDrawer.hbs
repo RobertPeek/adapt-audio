@@ -1,0 +1,118 @@
+<div class="audio-drawer__inner" role="list">
+
+	{{#if model._channels._narration._isEnabled}}
+	<div class="audio-drawer__item drawer__item" role="listitem">
+		<div class="audio-drawer__item-open">
+
+			{{#if model._channels._narration.title}}
+			<div class="drawer__item-title">
+				<div class="drawer__item-title-inner">
+					{{{model._channels._narration.title}}}
+				</div>
+			</div>
+			{{/if}}
+
+			{{#if model._channels._narration.descriptionOn}}
+			<div class="drawer__item-body">
+				<div class="drawer__item-body-inner narration-body">
+					{{{model._channels._narration.descriptionOn}}}
+				</div>
+			</div>
+			{{/if}}
+
+			<div class="audio-drawer__toggle-inner">
+				<button class="audio-drawer__toggle js-item-narration" data-id="0" aria-label=""></button>
+			</div>
+
+		</div>
+	</div>
+	{{/if}}
+
+	{{#if model._channels._effects._isEnabled}}
+	<div class="audio-drawer__item drawer__item" role="listitem">
+		<div class="audio-drawer__item-open">
+
+			{{#if model._channels._effects.title}}
+			<div class="drawer__item-title">
+				<div class="drawer__item-title-inner">
+					{{{model._channels._effects.title}}}
+				</div>
+			</div>
+			{{/if}}
+
+			{{#if model._channels._effects.descriptionOn}}
+			<div class="drawer__item-body">
+				<div class="drawer__item-body-inner effects-body">
+					{{{model._channels._effects.descriptionOn}}}
+				</div>
+			</div>
+			{{/if}}
+
+			<div class="audio-drawer__toggle-inner">
+				<button class="audio-drawer__toggle js-item-effects" data-id="1" aria-label=""></button>
+			</div>
+
+		</div>
+	</div>
+	{{/if}}
+
+	{{#if model._channels._music._isEnabled}}
+	<div class="audio-drawer__item drawer__item" role="listitem">
+		<div class="audio-drawer__item-open">
+
+			{{#if model._channels._music.title}}
+			<div class="drawer__item-title">
+				<div class="drawer__item-title-inner">
+					{{{model._channels._music.title}}}
+				</div>
+			</div>
+			{{/if}}
+
+			{{#if model._channels._music.descriptionOn}}
+			<div class="drawer__item-body">
+				<div class="drawer__item-body-inner music-body">
+					{{{model._channels._music.descriptionOn}}}
+				</div>
+			</div>
+			{{/if}}
+
+			<div class="audio-drawer__toggle-inner">
+				<button class="audio-drawer__toggle js-item-music" data-id="2" aria-label=""></button>
+			</div>
+
+		</div>
+	</div>
+	{{/if}}
+
+	{{#if model._reducedTextisEnabled}}
+	<div class="audio-drawer__item drawer__item" role="listitem">
+		<div class="audio-drawer__item-open">
+
+			{{#if model._reducedText.title}}
+			<div class="drawer__item-title">
+				<div class="drawer__item-title-inner">
+					{{{model._reducedText.title}}}
+				</div>
+			</div>
+			{{/if}}
+
+			{{#if model._reducedText.descriptionFull}}
+			<div class="drawer__item-body">
+				<div class="drawer__item-body-inner text-body">
+					{{{model._reducedText.descriptionFull}}}
+				</div>
+			</div>
+			{{/if}}
+
+			<button class="btn-text audio-drawer__btn js-full-button">
+				{{{model._reducedText._buttons.full}}}
+			</button>
+
+			<button class="btn-text audio-drawer__btn js-reduced-button">
+				{{{model._reducedText._buttons.reduced}}}
+			</button>
+
+		</div>
+	</div>
+	{{/if}}
+</div>
